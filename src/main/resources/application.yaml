@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: brewery-eureka
+
+server:
+  port: 8761
