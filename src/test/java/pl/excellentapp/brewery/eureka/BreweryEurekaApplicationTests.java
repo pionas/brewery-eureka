@@ -1,4 +1,4 @@
-package pl.excellentapp.brewery.eureka.eureka;
+package pl.excellentapp.brewery.eureka;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
