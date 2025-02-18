@@ -28,6 +28,7 @@
         <docker.image.prefix>excellentappbrewery</docker.image.prefix>
         <docker.image.name>${project.artifactId}</docker.image.name>
         <docker-maven-plugin.version>0.45.1</docker-maven-plugin.version>
+        <logstash-logback-encoder.version>8.0</logstash-logback-encoder.version>
     </properties>
 
     <dependencies>
@@ -38,6 +39,11 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>net.logstash.logback</groupId>
+            <artifactId>logstash-logback-encoder</artifactId>
+            <version>${logstash-logback-encoder.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
