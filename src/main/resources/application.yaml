@@ -1,22 +1,5 @@
 spring:
   application:
     name: brewery-eureka
-  zipkin:
-    base-url: http://localhost:9411/
-  security:
-    user:
-      name: netflix
-      password: eureka
-
-server:
-  port: 8761
-
-eureka:
-  client:
-    register-with-eureka: false
-    fetch-registry: false
-
-logging:
-  level:
-    com.netflix.eureka: OFF
-    com.netflix.discovery: OFF
+  config:
+    import: "optional:configserver:"
